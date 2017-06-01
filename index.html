@@ -16,61 +16,94 @@ Harshit kedia: http://github.com/hkedia321
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
-   
-  
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/index.css?11">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+  </script>
+  <style type="text/css">
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 9999;
+    }
+    #status {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-image: url(img/status.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: -100px 0 0 -100px;
+    }
+</style>
 </head>
 <body>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
 
             <!-- Add your site or application content here -->
             <div class="nav-wrap"  id="home">
-             <div class="nav-wrap navbar-fixed">
-               <nav class="smooth-transition navelem">
-                <div class="nav-wrapper">
-                  <a class="brand-logo cursor-pointer" onclick="$('html, body').animate({scrollTop: $('#home').offset().top}, 1000);">
-                      <img src="img/logo.png" class="responsive-img navbar-logo" />
-                  </a>
-                  <a href="#" data-activates="mobile-demo" class="button-collapse">
-                   <img src="img/hamburger.png" class="responsive-img menu-hamburger" />
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li class="navbar-big-li">
-                     <a class="navlink a-home" onclick="$('html, body').animate({scrollTop: $('#home').offset().top}, 1000);">HOME</a>
-                 </li>
-                 <li class="navbar-big-li">
-                     <a class="navlink a-services" onclick="$('html, body').animate({scrollTop: $('#whymcc').offset().top-80}, 1000);">WHY MCC?</a>
-                 </li>
-                 <li class="navbar-big-li">
+               <div class="nav-wrap navbar-fixed">
+                 <nav class="smooth-transition navelem">
+                    <div class="nav-wrapper">
+                      <a class="brand-logo cursor-pointer" onclick="$('html, body').animate({scrollTop: $('#home').offset().top}, 1000);">
+                          <img src="img/logo.png" class="responsive-img navbar-logo" />
+                      </a>
+                      <a href="#" data-activates="mobile-demo" class="button-collapse">
+                         <img src="img/hamburger.png" class="responsive-img menu-hamburger" />
+                     </a>
+                     <ul class="right hide-on-med-and-down">
+                        <li class="navbar-big-li">
+                           <a class="navlink a-home" onclick="$('html, body').animate({scrollTop: $('#home').offset().top}, 1000);">HOME</a>
+                       </li>
+                       <li class="navbar-big-li">
+                           <a class="navlink a-services" onclick="$('html, body').animate({scrollTop: $('#whymcc').offset().top-80}, 1000);">WHY MCC?</a>
+                       </li>
+                       <li class="navbar-big-li">
+                        <a class="navlink a-contact"
+                        onclick="$('html, body').animate({scrollTop: $('#services').offset().top-80}, 1000);">SERVICES
+                    </a>
+                </li>
+                <li class="navbar-big-li">
                     <a class="navlink a-contact"
-                    onclick="$('html, body').animate({scrollTop: $('#services').offset().top-80}, 1000);">SERVICES
+                    onclick="$('html, body').animate({scrollTop: $('#products').offset().top-80}, 1000);">PRODUCTS
                 </a>
             </li>
             <li class="navbar-big-li">
                 <a class="navlink a-contact"
-                onclick="$('html, body').animate({scrollTop: $('#products').offset().top-80}, 1000);">PRODUCTS
+                onclick="$('html, body').animate({scrollTop: $('#contactus').offset().top-80}, 1000);">CONTACT US
             </a>
         </li>
-        <li class="navbar-big-li">
-            <a class="navlink a-contact"
-            onclick="$('html, body').animate({scrollTop: $('#contactus').offset().top-80}, 1000);">CONTACT US
-        </a>
-    </li>
-</ul>
-<ul class="side-nav" id="mobile-demo">
-  <li class="navbar-big-li">
-     <a class="navlink a-home" onclick="$('html, body').animate({scrollTop: $('#home').offset().top}, 1000);">HOME</a>
- </li>
- <li class="navbar-big-li">
-     <a class="navlink a-services" onclick="$('html, body').animate({scrollTop: $('#whymcc').offset().top-80}, 1000);">WHY MCC?</a>
- </li>
- <li class="navbar-big-li">
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li class="navbar-big-li">
+       <a class="navlink a-home" onclick="$('html, body').animate({scrollTop: $('#home').offset().top}, 1000);">HOME</a>
+   </li>
+   <li class="navbar-big-li">
+       <a class="navlink a-services" onclick="$('html, body').animate({scrollTop: $('#whymcc').offset().top-80}, 1000);">WHY MCC?</a>
+   </li>
+   <li class="navbar-big-li">
     <a class="navlink a-contact"
     onclick="$('html, body').animate({scrollTop: $('#services').offset().top-80}, 1000);">SERVICES
 </a>
@@ -95,11 +128,11 @@ Harshit kedia: http://github.com/hkedia321
     <div class="home-wrap">
         <div class="container-fluid">
             <div class="row margin-bottom-0"> 
-                <div class="col s12 m6 home-col-1 ">
-                    <p class="home-intro-1 white-text">MCC is a one stop shop offering a full continuum of
+                <div class="col s12 m6 home-col-1 wow fadeIn" data-wow-delay="1s">
+                    <h5 class="home-intro-1 white-text">MCC is a one stop shop offering a full continuum of
                         services for restoration, preservation and ongoing
                         care of your vehicles’ exterior and interior.
-                    </p>
+                    </h5>
 
                     <h5 class="home-intro-2 white-text">We offer specialist detailing and paint correction
                         service for your elite vehicle.
@@ -123,24 +156,24 @@ Harshit kedia: http://github.com/hkedia321
                 </div>
                 <div class="after-white-wrap">
                     <div class="whymcc" id="whymcc">
-                        <h4 class="center">We are the most <b>luxurious detailing</b> company in UAE.</h4>
+                        <h4 class="center wow fadeInDown">We are the most <b>luxurious detailing</b> company in UAE.</h4>
                         <br />
                         <br />
                         <br />
                         <div class="center"  id="services">
-                            <h3 class="main-heading">Accountability</h3>
+                            <h3 class="main-heading wow fadeInUp">Accountability</h3>
                         </div>
 
                         <div class="row margin-bottom-0">
-                            <div class="col s12 m6 col-text col-hold-line">
-                               <div class="left-side-bar"></div>
-                               <h5>Customer Satisfaction is our foray.</h5>
-                               <br />
-                               <h5>Our specialized crew consists of experienced,
+                            <div class="col s12 m6 col-text col-hold-line wow fadeIn" data-wow-delay="1s">
+                             <div class="left-side-bar"></div>
+                             <h5>Customer Satisfaction is our foray.</h5>
+                             <br />
+                             <h5>Our specialized crew consists of experienced,
                                 trained and certified professionals from U.S.A, who ensure that we maintain high levels of Consumer Satisfaction.
                             </h5>
                         </div>
-                        <div class="col s12 m6 img-col-1">
+                        <div class="col s12 m6 img-col-1 wow fadeIn" data-wow-delay="1.5s">
                             <img src="img/4_half.jpg" class="responsive-img width-100" />
                         </div>
                     </div>
@@ -148,125 +181,134 @@ Harshit kedia: http://github.com/hkedia321
                     <br />
                     <div id="products">
                         <div class="center">
-                            <h3 class="main-heading">Products</h3>
+                            <h3 class="main-heading wow fadeInUp">Products</h3>
                         </div>
 
                         <div class="row margin-bottom-0">   
-                            <div class="col s12 m6 img-col-2 col-hold-line padding-0">
-                             <div class="left-side-bar"></div>
-                             <img src="img/1_half.jpg" class="responsive-img width-100" />
-                         </div>
-                         <div class="col s12 m6 col-text col-hold-line">
-                           <div class="right-side-bar"></div>
-                           <h5>At MCC, we use products based on the condition
-                               of the vehicle.</h5>
-                               <br />
-                               <h5>Our products are chosen with careful consideration –
-                                after conducting rigorous tests and are of
-                                exceptional quality.    
+                            <div class="col s12 m6 img-col-2 col-hold-line padding-0 wow fadeIn" data-wow-delay="1s">
+                               <div class="left-side-bar"></div>
+                               <img src="img/1_half.jpg" class="responsive-img width-100" />
+                           </div>
+                           <div class="col s12 m6 col-text col-hold-line wow fadeIn" data-wow-delay="1.5s">
+                             <div class="right-side-bar"></div>
+                             <h5>At MCC, we use products based on the condition
+                                 of the vehicle.</h5>
+                                 <br />
+                                 <h5>Our products are chosen with careful consideration –
+                                    after conducting rigorous tests and are of
+                                    exceptional quality.    
+                                </h5>
+                                <br />
+                                <h5>
+                                    And most importantly, we are the exclusive
+                                    distributors for all our products in the U.A.E
+                                </h5>   
+                            </div>
+                        </div>  
+                    </div>
+                    <br />
+                    <br />
+                    <div class="center">
+                        <h3 class="main-heading wow fadeInUp">Enviroment</h3>
+                    </div>
+
+                    <div class="row margin-bottom-0">   
+                        <div class="col s12 m6 img-col-2 col-hold-line padding-0 wow fadeIn" data-wow-delay="1s">
+                           <div class="left-side-bar"></div>
+                           <img src="img/2.jpg" class="responsive-img width-100" />
+                       </div>
+                       <div class="col s12 m6 col-text col-hold-line wow fadeIn" data-wow-delay="1.5s">
+                         <div class="right-side-bar"></div>
+                         <h5>MCC facility renders state of the art security
+                            system with 24hr surveillance
+                            to protect your prized investment. </h5>
+                            <br />
+                            <h5>We offer 5 star luxury services
+                                for esteemed customers.  
                             </h5>
                             <br />
                             <h5>
-                                And most importantly, we are the exclusive
-                                distributors for all our products in the U.A.E
-                            </h5>   
-                        </div>
-                    </div>  
+                             Indulge in unlimited refreshments at our
+                             luxurious lounge, while your cars get pampered
+                             to get the ultimate finish
+                         </h5>   
+                     </div>
+                 </div> 
+                 <br />
+                 <br />
+                 <div class="center" id="contactus">
+                    <h3 class="main-heading wow fadeInUp">Contact Us</h3>
                 </div>
-                <br />
-                <br />
-                <div class="center">
-                    <h3 class="main-heading">Enviroment</h3>
-                </div>
-
-                <div class="row margin-bottom-0">   
-                    <div class="col s12 m6 img-col-2 col-hold-line padding-0">
-                     <div class="left-side-bar"></div>
-                     <img src="img/2.jpg" class="responsive-img width-100" />
-                 </div>
-                 <div class="col s12 m6 col-text col-hold-line">
-                   <div class="right-side-bar"></div>
-                   <h5>MCC facility renders state of the art security
-                    system with 24hr surveillance
-                    to protect your prized investment. </h5>
-                    <br />
-                    <h5>We offer 5 star luxury services
-                        for esteemed customers.  
-                    </h5>
-                    <br />
-                    <h5>
-                       Indulge in unlimited refreshments at our
-                       luxurious lounge, while your cars get pampered
-                       to get the ultimate finish
-                   </h5>   
-               </div>
-           </div> 
-           <br />
-           <br />
-           <div class="center" id="contactus">
-            <h3 class="main-heading">Contact Us</h3>
-        </div>
-        <div class="row">
-            <div class="col s12 m12">
-                <div class="map-wrap">
-
-                    <div class="map-overlay"></div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.248255967044!2d55.232348314556745!3d25.161093983912945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f698dcc64f679%3A0x518ffb5335ed33fd!2sMAJESTIC+CAR+CARE!5e0!3m2!1sen!2sin!4v1496146264321" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div> 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s6 m3 bottom-add-col">
-                <h4>Address</h4>
-                <h6>
-                    Majestic Car Care,<br />
-                    P.O.Box 283118, Dubai, U.A.E.<br />
-                    <b>Tel:</b> +971 (4) 3884337<br />
-                    <b>Fax:</b> +971 (4) 3884557<br />
-                    <b>E-mail:</b> info@majesticuae.com<br />
-                </h6>
-            </div>
-            <div class="col s6 m3">
-                <h4>Find us</h4>
-                <div class="">
-                    <img src="img/fb.png" class="responsive-img"  /> <h6 class="display-inline-block">/majesticuae</h6>
-                </div>
-                <div class="">
-                    <img src="img/twitter.png" class="responsive-img"  /> <h6 class="display-inline-block">/majesticuae</h6>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <h4>Have something to say?</h4>
-                <form action="#">
-                    <div class="col s6 m6">
-                        <input type="text" name="name" class="inp-field" placeholder="Your Name" />
-                    </div> 
-                    <div class="col s6 m6">
-                        <input type="email" name="email" class="inp-field" placeholder="Your Email" />
-                    </div>
+                <div class="row wow fadeIn">
                     <div class="col s12 m12">
-                        <textarea name="message" class="inp-field" rows="9" placeholder="Your message"></textarea>
+                        <div class="map-wrap">
+
+                            <div class="map-overlay"></div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.248255967044!2d55.232348314556745!3d25.161093983912945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f698dcc64f679%3A0x518ffb5335ed33fd!2sMAJESTIC+CAR+CARE!5e0!3m2!1sen!2sin!4v1496146264321" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div> 
                     </div>
-                    <div class="col s12">
-                        <input type="submit" name="contact" value="Submit" class="contact-submit-btn" />
+                </div>
+                <div class="row wow fadeIn" data-wow-delay="0.5s">
+                    <div class="col s6 m3 bottom-add-col">
+                        <h4>Address</h4>
+                        <h6>
+                            Majestic Car Care,<br />
+                            P.O.Box 283118, Dubai, U.A.E.<br />
+                            <b>Tel:</b> +971 (4) 3884337<br />
+                            <b>Fax:</b> +971 (4) 3884557<br />
+                            <b>E-mail:</b> info@majesticuae.com<br />
+                        </h6>
                     </div>
-                </form>
+                    <div class="col s6 m3">
+                        <h4>Find us</h4>
+                        <div class="">
+                         <a href="https://www.facebook.com/majesticuae" target="_blank"> <img src="img/fb.png" class="responsive-img social-icon social-fb"  /></a> <h6 class="display-inline-block">/majesticuae</h6>
+                     </div>
+                     <div class="">
+                         <a href="https://twitter.com/majesticuae" target="_blank"> <img src="img/twitter.png" class="responsive-img social-icon social-twitter"  /></a> <h6 class="display-inline-block">/majesticuae</h6>
+                     </div>
+                 </div>
+                 <div class="col s12 m6">
+                    <h4>Have something to say?</h4>
+                    <form action="#">
+                        <div class="col s6 m6">
+                            <input type="text" name="name" class="inp-field" placeholder="Your Name" />
+                        </div> 
+                        <div class="col s6 m6">
+                            <input type="email" name="email" class="inp-field" placeholder="Your Email" />
+                        </div>
+                        <div class="col s12 m12" style="padding-right: 5px;">
+                            <textarea name="message" class="inp-field" rows="9" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="col s12">
+                            <input type="submit" name="contact" value="Submit" class="contact-submit-btn" />
+                        </div>
+                    </form>
+                </div>
+
             </div>
+            <br />
 
         </div>
-        <br />
-
     </div>
 </div>
-</div>
 
 
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
 <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(50).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(100).css({'overflow':'visible'});
+            $("header.primary-header--fixed-nav").delay(100).fadeIn();
+        });
+    //]]>
+</script> 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
            <!--  <script>
@@ -278,60 +320,65 @@ Harshit kedia: http://github.com/hkedia321
                 ga('create','UA-XXXXX-X','auto');ga('send','pageview');
             </script> -->
             <script type="text/javascript">
-            function window_resized(){
-                if($(window).width()<769){
-                    $(".nav-wrapper").addClass("valign-wrapper");
-                }
-                else
-                     $(".nav-wrapper").removeClass("valign-wrapper");
-            }
-            window_resized();
-            $( window ).resize(function() {
+                function window_resized(){
+                    if($(window).width()<769){
+                        $(".nav-wrapper").addClass("valign-wrapper");
+                    }
+                    else
+                       $(".nav-wrapper").removeClass("valign-wrapper");
+               }
+               window_resized();
+               $( window ).resize(function() {
                 window_resized();
             });
-                $(".map-wrap").click(function(){
-                    $(this).addClass("open");
-                });
-                $(".map-wrap").mouseleave(function(){
-                   $(this).removeClass("open");
-               });
-           </script>
-           <script type="text/javascript">
+               $(".map-wrap").click(function(){
+                $(this).addClass("open");
+            });
+               $(".map-wrap").mouseleave(function(){
+                 $(this).removeClass("open");
+             });
+         </script>
+         <script type="text/javascript">
             function add_scrolled(){
-             if($(window).scrollTop()>200)
-             {
-              $("nav").addClass("scrolled");
+               if($(window).scrollTop()>100)
+               {
+                  $("nav").addClass("scrolled");
+              }
+              else
+                  $("nav").removeClass("scrolled");
           }
-          else
-              $("nav").removeClass("scrolled");
-      }
-      $(window).scroll(function(){
-       add_scrolled();
-       add_active_nav();
-   });
+          $(window).scroll(function(){
+             add_scrolled();
+             add_active_nav();
+         });
 
-      function add_active_nav(){
-         var home=$("#home").offset().top;
-         var whymcc=$("#whymcc").offset().top;
-         var services=$("#services").offset().top;
-         var products=$("#products").offset().top;
-         var contactus=$("#contactus").offset().top;
-         var currentScroll = $(window).scrollTop();
-         $(".navlink").removeClass("active");
-         if(currentScroll>contactus-90)
-          $(".a-contactus").addClass("active");
-      else if(currentScroll>products-90)
-          $(".a-products").addClass("active");
-      else if(currentScroll>services-90)
-          $(".a-services").addClass("active");
-      else if(currentScroll>whymcc-90)
-        $(".a-whymcc").addClass("active");
-    else if(currentScroll>home-90)
-      $(".a-home").addClass("active");
-}
-add_active_nav();
-add_scrolled();
-$(".button-collapse").sideNav();
+          function add_active_nav(){
+           var home=$("#home").offset().top;
+           var whymcc=$("#whymcc").offset().top;
+           var services=$("#services").offset().top;
+           var products=$("#products").offset().top;
+           var contactus=$("#contactus").offset().top;
+           var currentScroll = $(window).scrollTop();
+           $(".navlink").removeClass("active");
+           
+           if(currentScroll>contactus-90)
+              $(".a-contactus").addClass("active");
+
+          else if(currentScroll>products-90)
+              $(".a-products").addClass("active");
+
+          else if(currentScroll>services-90)
+              $(".a-services").addClass("active");
+
+          else if(currentScroll>whymcc-90)
+            $(".a-whymcc").addClass("active");
+
+        else if(currentScroll>home-90)
+          $(".a-home").addClass("active");
+  }
+  add_active_nav();
+  add_scrolled();
+  $(".button-collapse").sideNav();
 </script>
 </body>
 </html>

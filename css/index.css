@@ -31,16 +31,17 @@
 	src: url(gadugi.ttf);
 }
 body{
-	background-image: url('../img/bg_main3.jpg');
+	background-image: url('../img/bg_main2.jpg');
 	background-repeat: repeat;
+	font-family: 'Questrial', sans-serif;
 }
 body,*{
-	font-family: gadugi !important;
+	
 	line-height: 30px;
 }
 .navbar-logo{
-	width: auto;
-	margin-top: 20px;
+	width: 140px;
+	margin-top: 5px;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -49,21 +50,21 @@ body,*{
 	width: 40px;
 }
 nav{
-	height: 130px;
+	height: 100px;
 	background-color: rgba(0,0,0,0.3);
 	padding-left: 4rem;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	z-index: 20001;
+	z-index: 2;
 }
 nav.scrolled{
-	height: 100px;
-	background-color: #000;
+	height: 80px;
+	background-color: rgb(31, 31, 31);
 }
 nav.scrolled .navbar-logo{
 	margin-top: 5px;
-	width: 140px;
+	width: 110px;
 }
 nav.scrolled .navbar-big-li{
 	padding-top: 2rem;
@@ -94,7 +95,7 @@ nav.scrolled .navbar-big-li{
 .after-nav-full-wrap{
 	margin-left: 15px !important;
 	margin-right: 15px !important;
-	margin-top: 68px;
+	margin-top: 38px;
 }
 .home-col-1{
 	padding: 6rem 4rem !important;
@@ -142,8 +143,8 @@ nav.scrolled .navbar-big-li{
 .main-heading::after{
 	content: '';
 	background-color: #000;
-	width: 120%;
-	left: -10%;
+	width: 90%;
+	left: 5%;
 	bottom: -10px;
 	height: 2px;
 	border-radius: 50px;
@@ -185,11 +186,11 @@ nav.scrolled .navbar-big-li{
 }
 .inp-field{
 	background-color: #ddd !important;
-    border-radius: 5px !important;
-    padding: 0 5px !important;
-    border: none !important;
-    text-decoration: none !important;
-    box-shadow: none !important;
+	border-radius: 5px !important;
+	padding: 0 5px !important;
+	border: none !important;
+	text-decoration: none !important;
+	box-shadow: none !important;
 }
 .contact-submit-btn{
 	background-color: #ddd !important;
@@ -199,13 +200,24 @@ nav.scrolled .navbar-big-li{
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	border: none !important;
-	 border-radius: 5px !important;
+	border-radius: 5px !important;
 }
 .contact-submit-btn:hover{
 	background-color: #d7d7d7 !important;
 }
 textarea.inp-field{
 	height: 90px !important;
+}
+.social-icon{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.social-fb:hover{
+	color: #3b5998 !important;
+}
+.social-twitter:hover{
+	color: #4099FF !important;
 }
 @media (max-width: 769px){
 	.aadha-home-img{
@@ -218,30 +230,41 @@ textarea.inp-field{
 		margin-bottom: 2rem;
 	}
 	.navbar-logo{
-		margin-left: 60px;
+		margin-left: 80%;
 		margin-top: 0px;
 	}
 	.menu-hamburger{
-	width: 50px;
-	margin-top: 20px;
+		width: 50px;
+		margin-top: 20px;
 		margin-left: -20px;
+	}
+}
+@media (max-width: 430px){
+	.navbar-logo{
+		margin-left: 50%;
 	}
 }
 @media (min-width: 769px){
 	.bottom-add-col{
-	padding-left: 2rem !important;
-}
+		padding-left: 2rem !important;
+	}
+	.main-heading::after{
+		width: 110%;
+		left: -5%;
+		bottom: -10px;
+		height: 2px;
+	}
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #333;
+	color: #333;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #333;
+	color: #333;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #333;
+	color: #333;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: #333;
+	color: #333;
 }
