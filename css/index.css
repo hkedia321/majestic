@@ -238,6 +238,9 @@ textarea.inp-field{
 		margin-top: 20px;
 		margin-left: -20px;
 	}
+	.main-heading{
+		margin-bottom: 2rem;
+	}
 }
 @media (max-width: 430px){
 	.navbar-logo{
