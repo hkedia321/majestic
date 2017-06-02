@@ -138,7 +138,7 @@ nav .button-collapse {
 	width: 101%;
 }
 .after-white-wrap{
-	background-color: #5d2623;;
+	background-color: rgb(10, 6, 5);
 	
 	padding-top: 1.5rem;
 }
@@ -192,7 +192,7 @@ nav .button-collapse {
 	display: none;
 }
 .inp-field{
-	background-color: #ac4f49 !important;
+	background-color: rgb(33, 28, 28) !important;
 	border-radius: 5px !important;
 	padding: 0 5px !important;
 	border: none !important;
@@ -200,7 +200,7 @@ nav .button-collapse {
 	box-shadow: none !important;
 }
 .contact-submit-btn{
-	background-color: #b52424 !important;
+	background-color: #6d6060 !important;
 	padding: 0.5rem 1rem !important;
 	box-shadow: none !important;
 	-webkit-transition: all 0.4s ease;
@@ -210,7 +210,7 @@ nav .button-collapse {
 	border-radius: 5px !important;
 }
 .contact-submit-btn:hover{
-	background-color: #9e1f1f !important;
+	background-color: #403838 !important;
 }
 textarea.inp-field{
 	height: 90px !important;
