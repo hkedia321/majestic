@@ -1,5 +1,8 @@
 .display-inline-block{
-	display: inline-block;
+	display: inline-block !important;
+}
+.display-none{
+	display: none !important;
 }
 .cursor-pointer{
 	cursor: pointer !important;
@@ -7,17 +10,36 @@
 .padding-0{
 	padding: 0px !important;
 }
+.padding-top-0{
+	padding-top: 0px !important;
+}
+.padding-right-0{
+	padding-right: 0px !important;
+}
+.padding-bottom-0{
+	padding-bottom: 0px !important;
+}
 .padding-left-0{
 	padding-left: 0px !important;
 }
-.margin-bottom-0{
-	margin-bottom: 0px !important;
+
+.margin-0{
+	margin: 0px !important;
 }
 .margin-top-0{
 	margin-top: 0px !important;
 }
+.margin-right-0{
+	margin-right: 0px !important;
+}
+.margin-bottom-0{
+	margin-bottom: 0px !important;
+}
+.margin-left-0{
+	margin-left: 0px !important;
+}
 .text-justify{
-	text-align: justify;
+	text-align: justify !important;
 }
 .width-100{
 	width: 100% !important;
@@ -230,7 +252,23 @@ textarea.inp-field{
 .virtual-tour-iframe{
 	height: 500px;
 }
+.view-all-btn{
+	background-color: #cd3939 !important;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.view-all-btn:hover{
+	background-color: #992c2c !important;
+}
 @media (max-width: 769px){
+	.view-all-btn{
+		font-size: 12px;
+    padding: 0 5px;
+	}
+	.view-all-btn .material-icons{
+		display: none;
+	}
 	.aadha-home-img{
 		height: auto !important;
 	}
@@ -285,6 +323,7 @@ textarea.inp-field{
 .white-text{
 	color: #000 !important;
 }
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: #eee;
 }
