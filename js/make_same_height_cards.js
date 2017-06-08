@@ -46,7 +46,7 @@
          window.setTimeout(function(){
     make_same_height_general();
     make_same_height_modal();
-},500);
+},100);
 });
     $(".modal-trigger").click(function(){
         window.setTimeout(function(){
