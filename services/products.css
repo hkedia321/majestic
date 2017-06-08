@@ -1,0 +1,132 @@
+.products-nav-wrap{
+	height: 80px;
+	position: relative;
+	background-color: rgba(31, 31, 31, 0.80);
+}
+ul, ul li{
+	list-style-type: disc !important;
+}
+.navbar-logo{
+	margin-top: -5px;
+	margin-left: 10px;
+	width: 110px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.products-title-nav{
+	padding-top: 15px;
+	position: relative;
+}
+.products-title-nav::after{
+	content: '';
+    background-color: #fff;
+    width: 110%;
+    left: -5%;
+    bottom: -10px;
+    height: 3px;
+    border-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+}
+.goback-div{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	position: absolute;
+    width: 130px;
+    padding: 0 10px;
+    top: 20px;
+    right: 10px;
+    background-color: #cd3939 !important;
+}
+.goback-div:hover{
+	background-color: #992c2c !important;
+}
+.goback-div img{
+	width: 40px;
+}
+
+/*NAVBAR OVER ****/
+.products-card{
+	padding: 1rem;
+	position: relative;
+	padding-bottom: 2rem;
+	background-color: #5d2623;
+}
+.card-image{
+	width: 80% !important;
+	height: 160px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+.modal{
+	background-color: #5d2623;
+	color: #fff;
+	max-height: 80% !important;
+	height: 85% !important;
+    width: 75%;
+}
+.card a{
+	
+}
+.modal-trigger{
+	cursor: pointer;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.modal-footer{
+	background-color: #54211e !important;
+}
+.knowmore-div{
+position: absolute;
+bottom: 0.5rem;
+right: 1rem;
+}
+.products-para,.modal .card p.text-justify{
+	line-height: 25px;
+
+}
+.ul-style-dots{
+	padding-left: 40px !important;
+	list-style-type: circle !important;
+}
+.ul-style-dots li{
+	list-style-type: circle !important;
+}
+@media (min-width: 769px){
+	
+}
+@media(max-width: 1100px){
+	.card-image{
+		height: 120px !important;
+	}
+}
+@media (max-width: 769px){
+	.modal{
+		width: 95%;
+	}
+	.navbar-logo{
+		/*position: relative;
+		margin-left: auto;
+		margin-right: auto;*/
+	}
+		.products-title-nav-div{
+			padding-top: 70px;
+			text-align: center !important;
+		}
+		.products-title-nav::after{
+			width: 110%;
+		}
+		.products-nav-wrap{
+			height: auto;
+    padding-bottom: 30px;
+			text-align: center;
+		}
+		.card-image{
+			width: 70% !important;
+			height: auto !important;
+		}
+
+}
