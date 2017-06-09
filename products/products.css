@@ -49,7 +49,7 @@
 	padding: 1rem;
 	position: relative;
 	padding-bottom: 2rem;
-	background-color: #5d2623;
+	background-color: #7e0b11;
 }
 .card-image{
 	width: 80% !important;
@@ -58,7 +58,7 @@
 	margin-right: auto;
 }
 .modal{
-	background-color: #5d2623;
+	background-color: #7e0b11;
 	color: #fff;
 	max-height: 80% !important;
 	height: 85% !important;
@@ -74,7 +74,7 @@
 	cursor: pointer;
 }
 .modal-footer{
-	background-color: #54211e !important;
+	background-color: #6d0b10 !important;
 }
 .knowmore-div{
 position: absolute;
